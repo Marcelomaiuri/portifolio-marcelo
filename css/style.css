@@ -141,6 +141,17 @@ text-decoration: solid;
 #sobre-mim .competencias li i{
   margin: 5px;
 }
+/*cursos*/
+#cursos{
+  padding: 30px;
+  letter-spacing: 2px;
+}
+#cursos a{
+  text-decoration: none;
+  color: #000000;
 
-
-
+}
+#cursos a:hover{
+  color:#808080;
+  opacity: 0.7;
+}
