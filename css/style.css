@@ -2,6 +2,7 @@
 * {
   font-family: "Open Sans", sans-serif;
 }
+
 h1 {
   letter-spacing: 2px;
   color: #f1f1f1;
@@ -10,10 +11,11 @@ h1 {
   text-transform: uppercase;
   margin: 1em;
 }
+
 body {
   margin: 0;
   padding: 0;
-  
+
 }
 
 /* Header */
@@ -30,11 +32,13 @@ header {
   -moz-box-shadow: 0px 10px 15px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 15px -15px rgba(0, 0, 0, 0.75);
 }
+
 header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 header nav a {
   color: #f1f1f1;
   text-decoration: none;
@@ -47,40 +51,29 @@ header nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height:50vh;
+  height: 100vh;
   background: rgba(161, 191, 255, 1);
-  background: -moz-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(161, 191, 255, 1) 0%,
-    rgba(67, 111, 204, 1) 100%
-  );
-  background: -webkit-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(161, 191, 255, 1) 0%,
-    rgba(67, 111, 204, 1) 100%
-  );
-  background: -o-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(161, 191, 255, 1) 0%,
-    rgba(67, 111, 204, 1) 100%
-  );
-  background: -ms-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(161, 191, 255, 1) 0%,
-    rgba(67, 111, 204, 1) 100%
-  );
-  background: radial-gradient(
-    ellipse at center,
-    rgba(161, 191, 255, 1) 0%,
-    rgba(67, 111, 204, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1bfff', endColorstr='#436fcc', GradientType=1 );
+  background: -moz-radial-gradient(center,
+      ellipse cover,
+      rgba(161, 191, 255, 1) 0%,
+      rgba(67, 111, 204, 1) 100%);
+  background: -webkit-radial-gradient(center,
+      ellipse cover,
+      rgba(161, 191, 255, 1) 0%,
+      rgba(67, 111, 204, 1) 100%);
+  background: -o-radial-gradient(center,
+      ellipse cover,
+      rgba(161, 191, 255, 1) 0%,
+      rgba(67, 111, 204, 1) 100%);
+  background: -ms-radial-gradient(center,
+      ellipse cover,
+      rgba(161, 191, 255, 1) 0%,
+      rgba(67, 111, 204, 1) 100%);
+  background: radial-gradient(ellipse at center,
+      rgba(161, 191, 255, 1) 0%,
+      rgba(67, 111, 204, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a1bfff', endColorstr='#436fcc', GradientType=1);
 }
-
 
 /* Photo */
 .photo-main {
@@ -92,66 +85,201 @@ header nav a {
 /* Description */
 .resume {
   text-align: center;
-  max-width: 400px;
-  margin: 15px auto;
+  margin: 30px auto;
   color: #f1f1f1;
   text-transform: uppercase;
+  font-size: 2em;
 }
-.resume-p{
+
+.resume-content {
   text-align: center;
   max-width: 400px;
-  margin: 15px auto;
+  margin: 0 auto;
   color: #f1f1f1;
   text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
 }
+
+.resume-content p {
+  padding-right: 15px;
+}
+
+.resume-content .resume-html::before {
+  content: "\f13b";
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 5px;
+}
+
+.resume-content .resume-css::before {
+  content: "\f38b";
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 5px;
+}
+
+.resume-content .resume-js::before {
+  content: "\f3b9";
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 5px;
+}
+
+
 /*navegacao*/
-.navegacao a:hover{
-opacity: .4;
-text-decoration: solid;
+.navegacao a:hover {
+  opacity: .4;
+  text-decoration: solid;
 }
+
+.main-content {
+  max-width: 1280px;
+  padding: 60px 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /*sobre-mim*/
-#sobre-mim{
-    letter-spacing: 2px;
+#sobre-mim {
+  letter-spacing: 2px;
 }
-#sobre-mim .titulo i::before{
-  margin:10px;
-}
-#sobre-mim .titulo h2{
-  font-size: 40px;
+
+#sobre-mim .titulo h2 {
+  font-size: 3em;
   text-align: center;
-  padding: 50px;
+  padding: 30px;
   margin: 0 auto;
   letter-spacing: 4px;
 }
-#sobre-mim .titulo p{
-  padding: 30px;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px auto;
+
+#sobre-mim .titulo h2::after {
+  content: "\f2bd";
+  font-family: "Font Awesome 5 Free";
+  margin-left: 15px;
 }
-#sobre-mim .competencias{
-  font-size: 15px;
-  font-weight: bold;
-  padding: 20px;
-  margin: 20px 30px;
+
+#sobre-mim .titulo p {
+  font-size: 1.6rem;
+  padding-bottom: 40px;
 }
-#sobre-mim .competencias li{
+
+/*Competencias*/
+.competencias .competencias-html::before {
+  content: "\f13b";
+  font-family: "Font Awesome 5 Brands";
+}
+.competencias .competencias-css::before {
+  content: "\f38b";
+  font-family: "Font Awesome 5 Brands";
+}
+.competencias .competencias-bootstrap::before {
+  content: "\f13b";
+  font-family: "Font Awesome 5 Brands";
+}
+.competencias .competencias-javascript::before {
+  content: "\f3b9";
+  font-family: "Font Awesome 5 Brands";
+}
+.competencias .competencias-git::before {
+  content: "\f841";
+  font-family: "Font Awesome 5 Brands";
+}
+
+.my-skills::after {
+  content: "\f5fc";
+  font-family: "Font Awesome 5 Free";
+  margin-left: 15px;
+}
+
+.competencias {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+#sobre-mim .competencias li {
   list-style: none;
+  display: flex;
 }
-#sobre-mim .competencias li i{
-  margin: 5px;
+
+.competencias .rating {
+  display: flex;
+  margin-top: 15px;
 }
-/*cursos*/
-#cursos{
-  padding: 30px;
+
+.competencias .rating .radius {
+  background-color: #aaaaaa;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.competencias .rating .radius.active {
+  background-color: #2a4580;
+}
+
+/*Cursos*/
+#cursos {
   letter-spacing: 2px;
+  margin-top: 10rem;
 }
-#cursos a{
+
+#cursos a {
   text-decoration: none;
   color: #000000;
 
 }
-#cursos a:hover{
-  color:#808080;
+
+#cursos a:hover {
+  color: #808080;
   opacity: 0.7;
 }
+
+#cursos .my-courses {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Onde me encontrar*/
+#social {
+  padding: 30px;
+  letter-spacing: 2px;
+}
+#social ul{
+  list-style: none;  
+}
+#social a{
+  text-decoration: none;
+  color: #000000;
+}
+#social .facebook::before {
+  content: "\f09a";
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 5px;
+}
+#social .instagram::before {
+  content: "\f955";
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 5px;
+}
+#social .linkedin::before {
+  content: "\f08c";
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 5px;
+}
+#social .github::before {
+  content: "\f09b";
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 5px;
+}
+#social .whatsapp::before {
+  content: "\f40c";
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 5px;
+}
+#social a:hover {
+  color: #808080;
+  opacity: 0.7;
+}
+
