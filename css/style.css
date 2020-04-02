@@ -46,7 +46,7 @@ header nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height:50vh;
   background: rgba(161, 191, 255, 1);
   background: -moz-radial-gradient(
     center,
@@ -80,6 +80,7 @@ header nav a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1bfff', endColorstr='#436fcc', GradientType=1 );
 }
 
+
 /* Photo */
 .photo-main {
   border-radius: 50%;
@@ -95,12 +96,26 @@ header nav a {
   color: #f1f1f1;
   text-transform: uppercase;
 }
-
-/* About */
-#about {
-  height: 100vh;
+.resume-p{
+  text-align: center;
+  max-width: 400px;
+  margin: 15px auto;
+  color: #f1f1f1;
+  text-transform: uppercase;
 }
+/*navegacao*/
+.navegacao a:hover{
+opacity: .4;
+text-decoration: solid;
+}
+/*sobre-mim*/
+#sobre-mim {  
+  height: 50vh;
+}
+#sobre-mim .sobre-mim-titulo .h2{
 
+}
+#sobre-mim-titulo{}
 /* Cursos */
 #cursos {
   height: 100vh;
