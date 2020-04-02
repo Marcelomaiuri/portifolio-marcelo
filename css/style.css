@@ -13,6 +13,7 @@ h1 {
 body {
   margin: 0;
   padding: 0;
+  
 }
 
 /* Header */
@@ -109,18 +110,37 @@ opacity: .4;
 text-decoration: solid;
 }
 /*sobre-mim*/
-#sobre-mim {  
-  height: 50vh;
+#sobre-mim{
+    letter-spacing: 2px;
 }
-#sobre-mim .sobre-mim-titulo .h2{
+#sobre-mim .titulo i::before{
+  margin:10px;
+}
+#sobre-mim .titulo h2{
+  font-size: 40px;
+  text-align: center;
+  padding: 50px;
+  margin: 0 auto;
+  letter-spacing: 4px;
+}
+#sobre-mim .titulo p{
+  padding: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+#sobre-mim .competencias{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px 30px;
+}
+#sobre-mim .competencias li{
+  list-style: none;
+}
+#sobre-mim .competencias li i{
+  margin: 5px;
+}
 
-}
-#sobre-mim-titulo{}
-/* Cursos */
-#cursos {
-  height: 100vh;
-}
 
-#social {
-  height: 100vh;
-}
+
