@@ -28,14 +28,9 @@
 
     <!--style-->
     <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family=Anton|Open+Sans&display=swap" />
+        href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
     <link rel="stylesheet" type="text/css" href="css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-
-    <!--js-->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/all.min.js"></script>
-    <script src="js/script.js"></script>
 
 <body>
     <header>
@@ -44,24 +39,27 @@
             <h1>Marcelo Maiuri</h1>
         </div>
         <!--navegacao-->
-        <nav class="navegacao">
+        <nav class="navegacao" id="top-menu">
             <a href="#about">About me</a>
             <a href="#skills">Skills</a>
             <a href="#progress">Progress</a>
         </nav>
+        <a href="javascript:void(0);" class="icon-burguer" onclick="myMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+
     </header>
     <main>
         <!--i am-->
         <section id="i-am">
             <img src="images/marcelo-maiuri.jpg" class="photo-main" />
-            <h3 class="resume">Front-end developer in training...</h3>
+            <h2 class="resume">Front-end developer in training...</h2>
             <div class="resume-content">
                 <p class="resume-html">HTML</p>
                 <p class="resume-css">CSS</p>
                 <p class="resume-js">JavaScript</p>
             </div>
         </section>
-
 
         <div class="main-content">
 
@@ -73,7 +71,7 @@
                     desenvolvimento front-end, sou uma pessoa capacitada, engajada, responsável e em busca de novos
                     desafios.<br />
                     Caso esteja em busca de um individuo que cresça juntamente com a empresa, este sou eu. Em meu
-                    curriculo você pode encontrar mais qualificações técnicas, espero que goste do meu perfil e das
+                    LinkedIn você pode encontrar mais qualificações técnicas, espero que goste do meu perfil e das
                     qualificações demonstradas nele.</p>
             </section>
 
@@ -167,13 +165,19 @@
         <ul id="social">
             <li><a href="https://www.facebook.com/marcelo.maiuri" target="_blank" class="icon facebook"></a>
             </li>
-            <li><a href="https://www.instagram.com/maiurimarcelo/?hl=pt-br" target="_blank" class="icon instagram"></a></li>
-            <li><a href="https://www.linkedin.com/in/marcelo-maiuri-1a334a74/" target="_blank" class="icon linkedin"></a>
+            <li><a href="https://www.instagram.com/maiurimarcelo/?hl=pt-br" target="_blank" class="icon instagram"></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/marcelo-maiuri-1a334a74/" target="_blank"
+                    class="icon linkedin"></a>
             </li>
             <li><a href="https://github.com/Marcelomaiuri" target="_blank" class="icon github"></a></li>
             <li><a href="https://wa.me/5511947881645" target="_blank" class="icon whatsapp"></a> </li>
         </ul>
     </footer>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

@@ -29,7 +29,12 @@ section {
 body {
   margin: 0;
   padding: 0;
+}
 
+.main-content {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -47,13 +52,18 @@ header {
   box-shadow: 0px 10px 15px -15px rgba(0, 0, 0, 0.75);
 }
 
-header nav {
+header .navegacao {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
 }
 
-header nav a {
+header .icon-burguer {
+  display: none;
+}
+
+header .navegacao a {
   color: #f1f1f1;
   text-decoration: none;
   margin: 0 15px;
@@ -63,13 +73,6 @@ header nav a {
 header .navegacao a:hover {
   opacity: .4;
   text-decoration: solid;
-}
-
-.main-content {
-  max-width: 1280px;
-  padding: 60px 30px;
-  width: 100%;
-  margin: 0 auto;
 }
 
 /* I'am  */
@@ -241,13 +244,13 @@ header .navegacao a:hover {
 }
 
 /*Onde me encontrar*/
-footer{
+footer {
   background-color: #2a4580;
   padding: 15px;
   text-align: center;
 }
 
-footer h3{
+footer h3 {
   color: #ffffff;
   font-weight: normal;
   margin: 0 0 30px 0;
@@ -259,6 +262,7 @@ footer h3{
   justify-content: space-between;
   max-width: 600px;
   margin: 0 auto;
+  padding: 0;
 }
 
 #social a {
@@ -278,7 +282,7 @@ footer h3{
   margin-left: 15px;
 }
 
-#social .icon{
+#social .icon {
   font-family: "Font Awesome 5 Brands";
   margin-right: 5px;
   font-size: 2em;
@@ -302,4 +306,70 @@ footer h3{
 
 #social .icon.whatsapp::before {
   content: "\f40c";
+}
+
+@media screen and (max-width: 1054px) {
+
+  #skills .competencias,
+  #progress .my-progress {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    width: 80%;
+  }
+
+  .navegacao a {
+    display: none;
+  }
+
+  header .icon-burguer {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+  header .icon-burguer .svg-inline--fa {
+    font-size: 40px;
+    color: #ffffff;
+  }
+
+  .navegacao.responsive a {
+    display: block;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #666E80;
+  }
+
+  .navegacao.responsive a:last-child {
+    border-bottom: none;
+  }
+
+  header .navegacao {
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    flex-direction: column;
+    background-color: #505F80;
+  }
+}
+
+@media screen and (max-width:410px) {
+  #i-am{
+    height: auto;
+    padding-top: 50px;
+  }
+  #i-am .photo-main{
+    max-width: 250px;
+  }
+  #i-am .resume{
+    font-size: 1.3em;
+  }
+  #about p{
+    font-size: 1em;
+  }
 }
