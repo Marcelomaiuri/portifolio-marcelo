@@ -12,6 +12,20 @@ h1 {
   margin: 1em;
 }
 
+h2 {
+  font-size: 2em;
+  letter-spacing: 3px;
+  margin: 30px 0;
+}
+
+p {
+  margin: 15px 0;
+}
+
+section {
+  padding-bottom: 45px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -46,6 +60,18 @@ header nav a {
   text-transform: uppercase;
 }
 
+header .navegacao a:hover {
+  opacity: .4;
+  text-decoration: solid;
+}
+
+.main-content {
+  max-width: 1280px;
+  padding: 60px 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* I'am  */
 #i-am {
   display: flex;
@@ -75,15 +101,13 @@ header nav a {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a1bfff', endColorstr='#436fcc', GradientType=1);
 }
 
-/* Photo */
-.photo-main {
+#i-am .photo-main {
   border-radius: 50%;
   max-width: 350px;
   margin: 0 auto;
 }
 
-/* Description */
-.resume {
+#i-am .resume {
   text-align: center;
   margin: 30px auto;
   color: #f1f1f1;
@@ -91,7 +115,7 @@ header nav a {
   font-size: 2em;
 }
 
-.resume-content {
+#i-am .resume-content {
   text-align: center;
   max-width: 400px;
   margin: 0 auto;
@@ -102,112 +126,85 @@ header nav a {
   justify-content: space-evenly;
 }
 
-.resume-content p {
+#i-am .resume-content p {
   padding-right: 15px;
 }
 
-.resume-content .resume-html::before {
+#i-am .resume-content .resume-html::before {
   content: "\f13b";
   font-family: "Font Awesome 5 Brands";
   margin-right: 5px;
 }
 
-.resume-content .resume-css::before {
+#i-am .resume-content .resume-css::before {
   content: "\f38b";
   font-family: "Font Awesome 5 Brands";
   margin-right: 5px;
 }
 
-.resume-content .resume-js::before {
+#i-am .resume-content .resume-js::before {
   content: "\f3b9";
   font-family: "Font Awesome 5 Brands";
   margin-right: 5px;
 }
 
-
-/*navegacao*/
-.navegacao a:hover {
-  opacity: .4;
-  text-decoration: solid;
-}
-
-.main-content {
-  max-width: 1280px;
-  padding: 60px 30px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 /*sobre-mim*/
-#sobre-mim {
-  letter-spacing: 2px;
-}
-
-#sobre-mim .titulo h2 {
-  font-size: 3em;
-  text-align: center;
-  padding: 30px;
-  margin: 0 auto;
-  letter-spacing: 4px;
-}
-
-#sobre-mim .titulo h2::after {
+#about .about::after {
   content: "\f2bd";
   font-family: "Font Awesome 5 Free";
   margin-left: 15px;
 }
 
-#sobre-mim .titulo p {
+#about p {
   font-size: 1.6rem;
-  padding-bottom: 40px;
 }
 
 /*Competencias*/
-.competencias .competencias-html::before {
-  content: "\f13b";
-  font-family: "Font Awesome 5 Brands";
-}
-.competencias .competencias-css::before {
-  content: "\f38b";
-  font-family: "Font Awesome 5 Brands";
-}
-.competencias .competencias-bootstrap::before {
-  content: "\f13b";
-  font-family: "Font Awesome 5 Brands";
-}
-.competencias .competencias-javascript::before {
-  content: "\f3b9";
-  font-family: "Font Awesome 5 Brands";
-}
-.competencias .competencias-git::before {
-  content: "\f841";
-  font-family: "Font Awesome 5 Brands";
-}
-
-.my-skills::after {
+#skills .my-skills::after {
   content: "\f5fc";
   font-family: "Font Awesome 5 Free";
   margin-left: 15px;
 }
 
-.competencias {
+#skills .competencias {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
-}
-
-#sobre-mim .competencias li {
   list-style: none;
-  display: flex;
 }
 
-.competencias .rating {
+#skills .competencias .competencias-html::before {
+  content: "\f13b";
+  font-family: "Font Awesome 5 Brands";
+}
+
+#skills .competencias .competencias-css::before {
+  content: "\f38b";
+  font-family: "Font Awesome 5 Brands";
+}
+
+#skills .competencias .competencias-bootstrap::before {
+  content: "\f13b";
+  font-family: "Font Awesome 5 Brands";
+}
+
+#skills .competencias .competencias-javascript::before {
+  content: "\f3b9";
+  font-family: "Font Awesome 5 Brands";
+}
+
+#skills .competencias .competencias-git::before {
+  content: "\f841";
+  font-family: "Font Awesome 5 Brands";
+}
+
+#skills .competencias .rating {
   display: flex;
   margin-top: 15px;
 }
 
-.competencias .rating .radius {
+#skills .competencias .rating .radius {
   background-color: #aaaaaa;
   width: 30px;
   height: 30px;
@@ -215,71 +212,94 @@ header nav a {
   margin-right: 10px;
 }
 
-.competencias .rating .radius.active {
+#skills .competencias .rating .radius.active {
   background-color: #2a4580;
 }
 
 /*Cursos*/
-#cursos {
-  letter-spacing: 2px;
-  margin-top: 10rem;
-}
 
-#cursos a {
+#progress a {
   text-decoration: none;
   color: #000000;
 
 }
 
-#cursos a:hover {
+#progress a:hover {
   color: #808080;
   opacity: 0.7;
 }
 
-#cursos .my-courses {
+#progress .progress::after {
+  content: "\f212";
+  font-family: "Font Awesome 5 Brands";
+  margin-left: 15px;
+}
+
+#progress .my-progress {
   display: flex;
   justify-content: space-around;
 }
 
 /*Onde me encontrar*/
-#social {
-  padding: 30px;
-  letter-spacing: 2px;
-}
-#social ul{
-  list-style: none;  
-}
-#social a{
-  text-decoration: none;
-  color: #000000;
-}
-#social .facebook::before {
-  content: "\f09a";
-  font-family: "Font Awesome 5 Brands";
-  margin-right: 5px;
-}
-#social .instagram::before {
-  content: "\f955";
-  font-family: "Font Awesome 5 Brands";
-  margin-right: 5px;
-}
-#social .linkedin::before {
-  content: "\f08c";
-  font-family: "Font Awesome 5 Brands";
-  margin-right: 5px;
-}
-#social .github::before {
-  content: "\f09b";
-  font-family: "Font Awesome 5 Brands";
-  margin-right: 5px;
-}
-#social .whatsapp::before {
-  content: "\f40c";
-  font-family: "Font Awesome 5 Brands";
-  margin-right: 5px;
-}
-#social a:hover {
-  color: #808080;
-  opacity: 0.7;
+footer{
+  background-color: #2a4580;
+  padding: 15px;
+  text-align: center;
 }
 
+footer h3{
+  color: #ffffff;
+  font-weight: normal;
+  margin: 0 0 30px 0;
+}
+
+#social {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#social a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#social a:hover {
+  color: #aaaaaa;
+  opacity: 0.7;
+  font-size: 2em;
+}
+
+#social .find-me::after {
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Free";
+  margin-left: 15px;
+}
+
+#social .icon{
+  font-family: "Font Awesome 5 Brands";
+  margin-right: 5px;
+  font-size: 2em;
+}
+
+#social .icon.facebook::before {
+  content: "\f09a";
+}
+
+#social .icon.instagram::before {
+  content: "\f955";
+}
+
+#social .icon.linkedin::before {
+  content: "\f08c";
+}
+
+#social .icon.github::before {
+  content: "\f09b";
+}
+
+#social .icon.whatsapp::before {
+  content: "\f40c";
+}
